@@ -547,7 +547,7 @@
             // Settings
             const voiceIndex = dom.voiceSelect.value;
             if (state.voices[voiceIndex]) {
-                utterance.voice = state.voices[voiceIndex].voice;
+                utterance.voice = state.voices[voiceIndex];
                 // Save voice pref
                 localStorage.setItem('ebook_voice', utterance.voice.voiceURI);
             }
